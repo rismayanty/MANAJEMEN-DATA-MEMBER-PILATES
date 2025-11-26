@@ -1,4 +1,4 @@
-from verif import validasi_id, login, registrasi
+from verif import login, registrasi
 from admin import menu_admin
 from member import menu_member
 from operasi import welcome, menu_utama
@@ -66,6 +66,5 @@ def main():
 # MAIN EXECUTE
 # ==========================
 
-if _name_ == "_main_":
-    welcome()
-    main()
+welcome()
+main()
