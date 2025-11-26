@@ -3,12 +3,6 @@ import os
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
-def validasi_id(id_user):
-    """ID harus 4 digit angka"""
-    return id_user.isdigit() and len(id_user) == 4
-
-
 def generate_id(users):
     """Menghasilkan ID baru otomatis 4 digit"""
     if not users:
@@ -58,7 +52,7 @@ def login(users, maks_percobaan):
             id_in = input("MASUKKAN ID: ")
             nama_in = input("MASUKKAN NAMA: ")
 
-            if not validasi_id(id_in):
+            if not (id_in.isdigit() and len(id_in) == 4):
                 print("⚠ FORMAT ID HARUS 4 DIGIT ANGKA!")
                 continue
 
