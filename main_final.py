@@ -1,10 +1,10 @@
 # di bagian import
-import v as verif_module
-from v import validasi_id,login, registrasi,generate_id,validasi_nama
-from a import menu_admin
-from mem import menu_member
-from o import menu_utama, enquiry_menu
-from f import keluar_program
+import verifikasi_final as verif_module
+from verifikasi_final import validasi_id,login, registrasi,generate_id,validasi_nama
+from admin_final import menu_admin
+from member_final import menu_member
+from operasi_final import menu_utama, enquiry_menu
+from final_final import keluar_program
 users = {
     "A001": {"nama": "Maya", "usia": 19, "role": "admin"},
     "A002": {"nama": "Adri", "usia": 19, "role": "admin"},

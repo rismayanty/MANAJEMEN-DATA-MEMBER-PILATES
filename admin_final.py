@@ -1,5 +1,5 @@
 from prettytable import PrettyTable
-from v import validasi_nama
+from verifikasi_final import validasi_nama
 import os
 
 JADWAL_PILATES = [{"hari":"Senin", "waktu":  "08:00 s/d 16:00",  "paket":"RINGAN", "harga":100000},

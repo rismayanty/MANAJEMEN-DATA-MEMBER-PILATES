@@ -20,7 +20,7 @@ def menu_member(pilates_shain, current_user, current_user_id, jadwal):
             print(f"USIA: {current_user['usia']}")
             mdata = pilates_shain.get(current_user_id)
             if mdata:
-                from o import biaya_pilates
+                from operasi_final import biaya_pilates
                 biaya = biaya_pilates(mdata.get("paket",""), mdata.get("durasi","0"))
                 print(f"Paket: {mdata.get('paket')}")
                 print(f"Durasi: {mdata.get('durasi')} bulan")
@@ -32,7 +32,7 @@ def menu_member(pilates_shain, current_user, current_user_id, jadwal):
             input("ENTER...")
 
         elif pilih == "2":
-            from o import tampilkan_jadwal_list
+            from operasi_final import tampilkan_jadwal_list
             tampilkan_jadwal_list(jadwal, pilates_shain)
             input("ENTER...")
 
@@ -42,7 +42,7 @@ def menu_member(pilates_shain, current_user, current_user_id, jadwal):
                 input("ENTER...")
                 continue
 
-            from o import tampilkan_jadwal_list
+            from operasi_final import tampilkan_jadwal_list
             tampilkan_jadwal_list(jadwal, pilates_shain)
             try:
                 nomor = int(input("PILIH NOMOR JADWAL: ").strip()) - 1
