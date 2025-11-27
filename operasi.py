@@ -15,7 +15,7 @@ def menu_utama():
     return input("PILIH MENU: ")
 
 def biaya_pilates(paket, durasi):
-    list_harga = {"BASIC": 50000, "FOAM": 75000, "LEGS": 60000, "FULL": 100000, "RINGAN": 40000}
+    list_harga = {"BASIC": 150000, "FOAM": 200000, "LEGS": 250000, "FULL": 500000, "RINGAN": 100000}
     try:
         return list_harga.get(paket.upper(), 0) * int(durasi)
     except ValueError:
