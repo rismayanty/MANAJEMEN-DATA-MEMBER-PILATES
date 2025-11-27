@@ -4,7 +4,6 @@ def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def generate_id(users):
-    """Menghasilkan ID baru otomatis 4 digit"""
     if not users:
         return "0001"  
 
